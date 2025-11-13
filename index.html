@@ -7,7 +7,7 @@
   <title>CST Driving</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <meta name="description" content="CST Driving — Conduz em Santo Tirso. Download do setup." />
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Ccircle cx='12' cy='12' r='10' fill='%2334d399'/%3E%3Cpath d='M7 14c0-1.657 3-3 5-3s5 1.343 5 3' stroke='%23000' stroke-width='1.2' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E" />
+  <link rel="icon" src="cstdriving.ico"/>
   <style>
     /* Pequenas customizações */
     .glass { background: rgba(255,255,255,0.06); backdrop-filter: blur(6px); }
@@ -19,9 +19,7 @@
       <!-- Ícone do jogo -->
       <div class="w-14 h-14 flex items-center justify-center bg-white/5 rounded-2xl shadow-md">
         <!-- ícone SVG carro -->
-        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="text-emerald-400">
-          <path d="M3 11c0-1 1-3 3-3h12c2 0 3 2 3 3v3c0 1-1 3-3 3h-1v1a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1v-1H8v1a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-1H3c-2 0-3-2-3-3v-3z" stroke="currentColor" stroke-width="0.8"/>
-        </svg>
+        <img src="CSTDriving.png" alt="CSTDriving" srcset="">
       </div>
       <div>
         <h1 class="text-2xl font-semibold">CST Driving</h1>
@@ -39,7 +37,7 @@
         <h2 class="text-4xl font-extrabold mb-3">Conduz por Santo Tirso — vive as ruas, sente a cidade</h2>
         <p class="text-slate-300 mb-6">CST Driving é um jogo de condução inspirado nas ruas reais de Santo Tirso. 
         Escolhe o teu carro, explora o mapa, completa desafios locais e sente a atmosfera urbana com tráfego simulado e efeitos sonoros imersivos.</p><div class="flex gap-3 flex-wrap">
-      <a id="download" href="https://github.com/thomraider12/cstdriving/releases/download/V0.1.0/CSTD_Installer.exe" download class="inline-flex items-center gap-3 px-5 py-3 rounded-xl bg-emerald-400 text-slate-900 font-semibold shadow-lg hover:scale-[1.01] transition"> 
+      <a id="download" href="https://github.com/thomraider12/cstdriving/releases/download/V0.2.0/CSTD_Installer.exe" download class="inline-flex items-center gap-3 px-5 py-3 rounded-xl bg-emerald-400 text-slate-900 font-semibold shadow-lg hover:scale-[1.01] transition"> 
         <!-- ícone do botão -->
         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 3v12" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M8 11l4 4 4-4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><rect x="3" y="17" width="18" height="4" rx="1" stroke="currentColor" stroke-width="1.2"/></svg>
         Baixar setup (Windows)
@@ -51,11 +49,11 @@
     <div class="mt-6 grid grid-cols-2 sm:grid-cols-4 gap-3 text-xs text-slate-300">
       <div class="glass p-3 rounded-lg">
         <div class="font-semibold">Tamanho</div>
-        <div>~ 1.2 GB</div>
+        <div>~ 1.5 GB</div>
       </div>
       <div class="glass p-3 rounded-lg">
         <div class="font-semibold">Versão</div>
-        <div>v0.1.0</div>
+        <div>v0.2.0 BETA</div>
       </div>
       <div class="glass p-3 rounded-lg">
         <div class="font-semibold">Plataforma</div>
@@ -63,7 +61,7 @@
       </div>
       <div class="glass p-3 rounded-lg">
         <div class="font-semibold">Idioma</div>
-        <div>Português (pt-PT);<br>Inglês (us-US)</div>
+        <div>Português (pt-PT)</div>
       </div>
     </div>
   </div>
@@ -71,11 +69,11 @@
   <aside class="bg-white/3 p-4 rounded-2xl shadow-inner">
     <div class="rounded-lg overflow-hidden mb-4">
       <!-- screenshot placeholder -->
-      <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?q=80&w=900&auto=format&fit=crop" alt="Screenshot do jogo" class="w-full h-48 object-cover">
+      <img src="screenshot.png" alt="Screenshot do jogo" class="w-full h-48 object-cover">
     </div>
     <div class="text-sm text-slate-200">
       <strong>Resumo rápido</strong>
-      <p class="text-slate-300 text-sm mt-2">Explora Santo Tirso com gráficos optimizados para PCs modestos e sons realistas. Ideal para quem gosta de condução casual e desafios locais.</p>
+      <p class="text-slate-300 text-sm mt-2">Explora Santo Tirso com gráficos optimizados para PCs modestos e sons realistas. Ideal para quem gosta de condução casual <del>e desafios locais.</del></p>
     </div>
   </aside>
 </section>
@@ -84,11 +82,11 @@
   <h3 class="text-xl font-bold mb-3">Características principais</h3>
   <ul class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-slate-200">
     <li class="p-3 bg-white/5 rounded-lg">Mapa reproduzido inspirado em Santo Tirso</li>
-    <li class="p-3 bg-white/5 rounded-lg">Tráfego dinâmico e sinais de trânsito (por vir)</li>
-    <li class="p-3 bg-white/5 rounded-lg">Sistema de danos leve e física acessível (por vir)</li>
+    <li class="p-3 bg-white/5 rounded-lg"><del>Tráfego dinâmico e sinais de trânsito</del></li>
+    <li class="p-3 bg-white/5 rounded-lg"><del>Sistema de danos leve e física acessível</del></li>
     <li class="p-3 bg-white/5 rounded-lg">Suporte a gamepad e teclado</li>
-    <li class="p-3 bg-white/5 rounded-lg">Efeitos sonoros locais (travagens, motor, ambiente) (por vir)</li>
-    <li class="p-3 bg-white/5 rounded-lg">Modo desafio: percursos icónicos da cidade (por vir)</li>
+    <li class="p-3 bg-white/5 rounded-lg">Efeitos sonoros locais (travagens, motor, ambiente)</li>
+    <li class="p-3 bg-white/5 rounded-lg"><del>Modo desafio: percursos icónicos da cidade</del></li>
   </ul>
 </section>
 
